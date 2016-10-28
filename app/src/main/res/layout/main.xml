@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">-->
+
+       <!-- <com.jasper.arcmenudemo.view.RayMenu
+            android:id="@+id/ray_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>-->
+
+        <com.jasper.arcmenudemo.view.ArcMenu
+            android:id="@+id/arc_menu"
+            android:layout_width="120dp"
+            android:layout_height="118dp"
+            arc:childSize="30dp"
+            arc:fromDegrees="90"
+            arc:toDegrees="270"
+            android:layout_marginLeft="100dp"/>
+
+</ScrollView>

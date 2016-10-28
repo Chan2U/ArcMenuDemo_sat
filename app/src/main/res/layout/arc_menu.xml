@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.jasper.arcmenudemo.view.ArcLayout
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008000"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+        <FrameLayout
+            android:id="@+id/control_layout"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_vote" >
+        </FrameLayout>
+
+    </FrameLayout>
+
+</merge>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.jasper.arcmenudemo.view.ArcLayout
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:childSize="144px"
+        custom:fromDegrees="0.0"
+        custom:toDegrees="270.0"
+        android:background="#008000"/>
+    &lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;
+
+&lt;!&ndash;    <FrameLayout
+        android:id="@+id/control_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/composer_button" >&ndash;&gt;
+    <FrameLayout
+        android:id="@+id/control_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/composer_button" >
+
+        <ImageView
+            android:id="@+id/control_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:src="@drawable/composer_icn_plus" />
+    </FrameLayout>
+
+</merge>
+-->
