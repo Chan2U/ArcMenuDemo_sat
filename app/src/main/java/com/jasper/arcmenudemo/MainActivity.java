@@ -17,6 +17,8 @@
 package com.jasper.arcmenudemo;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -28,27 +30,27 @@ import com.jasper.arcmenudemo.view.RayMenu;
 
 
 /**
- * 
  * @author Capricorn
- * 
  */
 public class MainActivity extends Activity {
-	private static final int[] ITEM_DRAWABLES = {
-			R.drawable.btn_five_hundred, R.drawable.btn_coin_hundred,
-			R.drawable.btn_coin_ten, R.drawable.btn_coin_one,
+    private static final int[] ITEM_DRAWABLES = {
+            R.drawable.btn_five_hundred, R.drawable.btn_coin_hundred,
+            R.drawable.btn_coin_ten, R.drawable.btn_coin_one,
     };
 
-	/** Called when the activity is first created. */
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+    /**
+     * Called when the activity is first created.
+     */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
 
-		ArcMenu arcMenu = (ArcMenu) findViewById(R.id.arc_menu);
+        ArcMenu arcMenu = (ArcMenu) findViewById(R.id.arc_menu);
 
         initArcMenu(arcMenu, ITEM_DRAWABLES);
 
-	}
+    }
 
     private void initArcMenu(ArcMenu menu, int[] itemDrawables) {
         final int itemCount = itemDrawables.length;
@@ -62,6 +64,7 @@ public class MainActivity extends Activity {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(MainActivity.this, "position:" + position, Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, SecondAddActivity.class));
                 }
             });
         }
